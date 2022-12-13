@@ -3,17 +3,36 @@ h1 {
   text-align: center;
   width: 696px;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    width: 360px;
+    font-size: 26px;
+   line-height: 42px;
+  }
 }
 .hero{
     text-align: center;
     text-transform: uppercase;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url(../images/im-hero.jpg);
+      url(../images/hero-d.jpg);
     max-width: 1600px;
     padding-top: 150px;
     padding-bottom: 150px;
     margin: 0 auto;
+    @media (max-width: 480px) {
+      padding-top: 118px;
+      padding-bottom: 118px;
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/hero-m.jpg);
+      }
+    @media (max-width: 768px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+  url(../images/here-t.png);
+    }
    &-heading {
     color: #ffffff;
     line-height: 1.3;
