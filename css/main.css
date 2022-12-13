@@ -102,6 +102,11 @@ ul {
   text-transform: capitalize;
   margin-right: 94px;
 }
+@media (max-width: 768px) {
+  .page-header .page-header__logo {
+    margin-right: 87px;
+  }
+}
 
 .logo span {
   color: var(--active-color);
@@ -150,23 +155,18 @@ ul {
   width: 100%;
 }
 
-.contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .contacts {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-}
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
 }
 .contacts__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: none;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
@@ -175,9 +175,6 @@ ul {
   font-style: normal;
   padding-top: 32px;
   padding-bottom: 32px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -195,6 +192,18 @@ ul {
   color: var(--active-color);
 }
 
+@media (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__links {
+    padding: 0;
+    margin: 16px 0;
+  }
+}
 .menu-desk {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,6 +211,12 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 65px;
+}
+@media (min-width: 1200px) {
+  .menu-desk {
+    gap: 290px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -257,6 +272,11 @@ ul {
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
+@media (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -332,16 +352,20 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
+.mob-social__item:not(:first-child) {
+  margin-left: 10px;
+}
 .mob-social__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
 }
+
 .mob-social__links {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
-  padding: 10px;
   letter-spacing: 0.02em;
   text-decoration: none;
   font-style: normal;
@@ -741,7 +765,7 @@ h1 {
     margin-top: 30px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) {
   .clients-list .clients-list__item {
     width: calc((100% - 30px) / 2);
   }
