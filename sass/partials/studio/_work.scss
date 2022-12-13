@@ -1,0 +1,40 @@
+.work__container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.work-heading {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.photos {
+  display: flex;
+  margin-top: 50px;
+
+  &__item {
+    position: relative;
+    margin-right: 30px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+
+&__overlay {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #fff;
+  width: 100%;
+  opacity: 1;
+  padding: 27px;
+  text-align: center;
+  font-family: inherit;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+}
+}

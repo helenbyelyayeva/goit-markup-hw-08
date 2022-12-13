@@ -1,0 +1,18 @@
+@import './utils/variables';
+@import './components/container';
+@import './base/common';
+@import './base/reset';
+
+@import './partials/header';
+@import './partials/mobile-menu';
+@import './partials/studio/hero';
+
+@import './partials/studio/information';
+@import './partials/studio/work';
+@import './partials/studio/workers';
+@import './components/social';
+@import './partials/studio/clients';
+@import './partials/portfoliopage/porfolio';
+@import './partials/footer';
+
+@import './partials/studio/modalform';
