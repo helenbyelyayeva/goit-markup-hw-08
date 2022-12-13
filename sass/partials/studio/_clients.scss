@@ -2,6 +2,10 @@
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
+      @media screen and (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+     }
   }
   
   .clients-heading{
@@ -11,17 +15,22 @@
     font-size: 36px;
     line-height: 42px;
     text-align: center;
+    @media screen and (max-width: 768px) {
+      font-size: 28px;
+      line-height: 33px;
+    }
   }
   
+
   .clients-list {
     margin-top: 50px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:30px;
     &__link {
+      height: 92px;
         display: flex;
         color: #afb1b8;
-        width: 170px;
-        height: 92px;
         background-color: #fff;
         align-items: center;
         justify-content: center;
@@ -39,11 +48,28 @@
         border-color: var(--active-color);
         outline: none;
       }
+
+    @media screen and (max-width: 768px) {
+      margin-top: 30px;
   }
-  
+  .clients-list__item{
+
+    @media screen and (min-width: 460px) {
+      width: calc((100% - 30px)/2);
+   }
+   
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 60px)/3);
+   }
+
+   @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px)/6);
+ }
+  }
   .clients-list__icons {
     fill: currentColor;
     width: 106px;
     height: 60px;
   }
-    
+}

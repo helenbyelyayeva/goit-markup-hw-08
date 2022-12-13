@@ -12,7 +12,7 @@
     <title>Студія</title>
   </head>
   <body>
-    <header class="page-header">
+    <!-- <header class="page-header">
       <div class="container page-header__container">
         <a class="logo page-header__logo" href="./index.html"><span>Web</span>Studio</a>
         <button
@@ -108,14 +108,15 @@
             <li class="mob-social__item"><a class="mob-social__links" href="#">LinkedIn</a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
 
       <main>
-        <!-- <section class="hero"> -->
-        <!-- <h1 class="hero-heading">Ефективні рішення для вашого бізнесу</h1>
+        <!-- <section class="hero">
+        <h1 class="hero-heading">Ефективні рішення для вашого бізнесу</h1>
         <button data-modal-open class="button hero__button" type="button">Замовити
           послугу</button>
       </section> -->
+
         <!-- <section class="information">
         <div class="container information__container">
           <h2 class="information-heading">Загальна інформація</h2>
@@ -170,8 +171,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
-        <!-- <section class="work">
+      </section>
+
+        <section class="work">
         <div class="container work__container">
           <h2 class="work-heading">Чим ми займаємося</h2>
           <ul class="photos">
@@ -206,18 +208,21 @@
         </div>
       </section>
 
- -->
-        <!-- <section class="workers">
-        <div class="container">
+
+        <section class="workers">
+        <div class="container workers__container">
           <h2 class="workers-heading">Наша команда</h2>
           <ul class="grid">
             <li class="grid-card">
               <article class="worker">
+                <picture>
+                  <source srcset="./images/im1.jpg, ./images/im1-2x.jpg " media="min-width: 1200px"/>
+                  <source  srcset="./images/img1-tab.jpg, ./images/img1-tab-2x.jpg " media="min-width: 768px"/>
+                  <source  srcset="./images/img1-mob.jpg, ./images/img1-mob-2x.jpg " media="min-width: 460px"/>
+                </picture>
                 <img
-                  src="./images/img:1.jpg"
+                  src="./images/img1-mob.jpg"
                   alt="молодий чоловік в окулярах"
-                  width="270"
-                  height="260"
                   class="worker__inmage"
                   />
                 <div class="private">
@@ -249,11 +254,14 @@
             </li>
             <li class="grid-card">
               <article class="worker">
+                <picture>
+                  <source srcset="./images/im2.jpg, ./images/im2-2x.jpg " media="min-width: 1200px"/>
+                  <source  srcset="./images/img2-tab.jpg, ./images/img2-tab-2x.jpg " media="min-width: 768px"/>
+                  <source  srcset="./images/img2-mob.jpg, ./images/img2-mob-2x.jpg " media="min-width: 460px"/>
+                </picture>
                 <img
-                  src="./images/im2.jpg"
+                  src="./images/img2-mob.jpg"
                   alt="дівчина робітник фронт"
-                  width="270"
-                  height="260"
                   class="worker__inmage"
                   />
                 <div class="private">
@@ -286,11 +294,14 @@
             </li>
             <li class="grid-card">
               <article class="worker">
+                <picture>
+                  <source srcset="./images/im3.jpg, ./images/im3-2x.jpg " media="min-width: 1200px"/>
+                  <source  srcset="./images/img3-tab.jpg, ./images/img3-tab-2x.jpg " media="min-width: 768px"/>
+                  <source  srcset="./images/img3-mob.jpg, ./images/img3-mob-2x.jpg " media="min-width: 460px"/>
+                </picture>
                 <img
-                  src="./images/im3.jpg"
+                  src="./images/img3-mob.jpg"
                   alt="хлопець з маркентгу"
-                  width="270"
-                  height="260"
                   class="worker__inmage"
                   />
                 <div class="private">
@@ -323,11 +334,15 @@
             </li>
             <li class="grid-card">
               <article class="worker">
+                <picture>
+                  <source srcset="./images/im4.jpg, ./images/im4-2x.jpg " media="min-width: 1200px"/>
+                  <source  srcset="./images/img4-tab.jpg, ./images/img4-tab-2x.jpg " media="min-width: 768px"/>
+                  <source  srcset="./images/img4-mob.jpg, ./images/img4-mob-2x.jpg " media="min-width: 460px"/>
+                </picture>
                 <img
-                  src="./images/im4.jpg"
+                  src="./images/img4-mob.jpg"
+                  width="450px"
                   alt="молодий чоловік в окулярах UI"
-                  width="270"
-                  height="260"
                   class="worker__inmage"
                   />
                 <div class="private">
@@ -359,8 +374,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
-        <!-- <section class="clients">
+      </section>
+
+        <section class="clients">
         <div class="container">
           <h2 class="clients-heading">Постійні клієнти</h2>
           <ul class="clients-list">
@@ -384,11 +400,11 @@
                 </svg></a></li>
           </ul>
         </div>
-      </section> -->
-        <!-- </main> -->
+      </section>
+      </main> -->
 
 
-        <!-- <footer class="page-footer">
+        <footer class="page-footer">
       <div class="container page-footer__container">
         <div class="left-footer">
           <a class="logo page-footer__logo" href="./index.html"><span>Web</span>Studio</a>
@@ -488,7 +504,7 @@
           <button class="modal-button__submit" type="submit">Відправити</button>
         </form>
       </div>
-    </div> -->
+    </div>
         <script
           defer
           src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
