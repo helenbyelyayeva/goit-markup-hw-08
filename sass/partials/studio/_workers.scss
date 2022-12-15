@@ -9,12 +9,7 @@
 
   }
 }
-.workers__container{
-  @media screen and (max-width: 768px) {
-  padding-left: 0;
-  padding-right: 0;
-}
-}
+
 
 .workers-heading {
   font-size: 36px;
@@ -54,6 +49,7 @@
 }
 .worker__inmage{
   width: 100%;
+  height: auto;
 }
 .private {
   background-color: #ffffff;

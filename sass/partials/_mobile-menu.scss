@@ -1,10 +1,10 @@
 .menu-desk {
     display: flex;
     align-items: center;
-    gap:65px;
-    @media (min-width: 1200px){
-        gap:290px;
-    }
+    gap:10%;
+   @media (min-width: 1200px){
+       gap:5%;
+   }
 }
 
 @media (max-width: 767px) {
@@ -15,19 +15,16 @@
 }
 
 .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    margin: 0;
-    padding: 0;
+    margin-left: auto;
     background-color: transparent;
     cursor: pointer;
     border: none;
     border-radius: 50%;
     outline: none;
+    padding: 22px;
 }
 
 @media (min-width: 768px) {
@@ -38,7 +35,8 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--active-color);
+    background-color: transparent;
 }
 
 .menu-container {
@@ -53,11 +51,15 @@
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 }
-@media (min-width: 768px) {
+@media  screen and (max-width: 467px),(min-width: 768px){
     .menu-container {
-        display: none;
+        display:none;
     }
 }
+
+
+
+
 .menu-container.is-open {
     transform: translateX(0);
 }
@@ -107,7 +109,7 @@
 }
 
 .mob-contacts {
-    margin-top: 302px;
+    margin-top: 10%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -135,7 +137,7 @@
 
 .mob-social {
     display: flex;
-    margin-top: 64px;
+    margin-top: 10%;
     align-items: center;
     &__item:not(:first-child){
         margin-left: 10px;
