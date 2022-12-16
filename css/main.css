@@ -801,6 +801,12 @@ h1 {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (max-width: 768px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .filter {
   display: -webkit-box;
@@ -809,12 +815,16 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
 }
-.filter__item {
-  margin-right: 8px;
-}
-.filter__item:last-child {
-  margin-right: 0;
+@media screen and (max-width: 768px) {
+  .filter {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .btn-ex {
@@ -851,7 +861,17 @@ h1 {
   gap: 30px;
 }
 .gallary__item {
-  width: auto;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .gallary__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallary__item {
+    width: calc((100% - 90px) / 3);
+  }
 }
 .gallary__item:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -865,6 +885,8 @@ h1 {
 .gallary__img {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: auto;
 }
 
 .ex-overlay {
@@ -893,16 +915,21 @@ h1 {
 }
 
 .product {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
+  height: auto;
 }
 .product__name {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .product___info {
+  margin-top: 4px;
   font-size: 16px;
   line-height: 1.88;
   color: #757575;
