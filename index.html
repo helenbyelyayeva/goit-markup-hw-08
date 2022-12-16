@@ -85,29 +85,30 @@
       <div class="mobile-menu">
         <ul class="mob-menu">
           <li class="mob-menu__item">
-            <a class="mob-menu__links "href="./index.html">Студія</a>
+            <a class="mob-menu__links" href="./index.html">Студія</a>
           </li>
           <li class="mob-menu__item">
-            <a class="mob-menu__links " href="./portfolio.html">Портфоліо</a>
+            <a class="mob-menu__links" href="./portfolio.html">Портфоліо</a>
           </li>
           <li class="mob-menu__item"><a class="mob-menu__links " href="#">Контакти</a></li>
         </ul>
-        <ul class="mob-contacts">
-          <li class="mob-contacts__item">
-            <a class="mob-contacts__links" href="tel:380961111111">+38 096 111
-              11 11</a>
-          </li>
-          <li class="mob-contacts__item">
-            <a class="mob-contacts__links" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-
-        </ul>
-        <ul class="mob-social">
-          <li class="mob-social__item"><a class="mob-social__links" href="#">Instagram</a></li>
-          <li class="mob-social__item"><a class="mob-social__links" href="#">Twitter</a></li>
-          <li class="mob-social__item"><a class="mob-social__links" href="#">Facebook</a></li>
-          <li class="mob-social__item"><a class="mob-social__links" href="#">LinkedIn</a></li>
-        </ul>
+        <div class="all-cont">
+          <ul class="mob-contacts">
+            <li class="mob-contacts__item">
+              <a class="mob-contacts__links" href="tel:380961111111">+38 096 111
+                11 11</a>
+            </li>
+            <li class="mob-contacts__item">
+              <a class="mob-contacts__links" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mob-social">
+            <li class="mob-social__item"><a class="mob-social__links" href="#">Instagram</a></li>
+            <li class="mob-social__item"><a class="mob-social__links" href="#">Twitter</a></li>
+            <li class="mob-social__item"><a class="mob-social__links" href="#">Facebook</a></li>
+            <li class="mob-social__item"><a class="mob-social__links" href="#">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <main>
@@ -178,30 +179,44 @@
           <h2 class="work-heading">Чим ми займаємося</h2>
           <ul class="photos">
             <li class="photos__item">
-              <img
-                src="./images/b.jpg"
-                alt="написання коду"
-                width="370"
-                height="294"
-                />
+              <picture>
+                <source srcset="./images/b.jpg 1x, ./images/b-2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+                  <img
+                  src="./images/b.jpg"
+                  alt="написання коду"
+                  width="370"
+                  height="294"
+                  />
+              </picture>
+        
               <div class="photos__overlay"><p>Десктопні додатки</p></div>
             </li>
             <li class="photos__item">
-              <img
-                src="./images/img.jpg"
-                alt="робота з дизайном"
-                width="370"
-                height="294"
-                />
+              <picture>
+                <source srcset="./images/img.jpg 1x, ./images/img-2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+                  <img
+                  src="./images/img.jpg"
+                  alt="робота з дизайном"
+                  width="370"
+                  height="294"
+                  />
+              </picture>
+        
               <div class="photos__overlay"><p>Мобільні додатки</p></div>
             </li>
             <li class="photos__item">
-              <img
-                src="./images/img2.jpg"
-                alt="палітра колорів"
-                width="370"
-                height="294"
-                />
+              <picture>
+                <source srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+                  <img
+                  src="./images/img2.jpg"
+                  alt="робота з дизайном"
+                  width="370"
+                  height="294"
+                  />
+              </picture>
               <div class="photos__overlay"><p>Дизайнерські рішення</p></div>
             </li>
           </ul>
@@ -216,19 +231,19 @@
             <li class="grid-card">
               <article class="worker">
                 <picture>
-                  <source srcset="./images/im1.jpg, ./images/im1-2x.jpg "
+                  <source srcset="./images/im1.jpg 1x, ./images/im1-2x.jpg 2x"
                     media="(min-width: 1200px)"/>
-                  <source srcset="./images/img1-tab.jpg,
-                    ./images/img1-tab-2x.jpg " media="(min-width: 768px)"/>
-                  <source srcset="./images/img1-mob.jpg,
-                    ./images/img1-mob-2x.jpg " media="(min-width: 480px)"/>
-                    <img
+                  <source srcset="./images/img1-tab.jpg 1x,
+                    ./images/img1-tab-2x.jpg 2x" media="(min-width: 768px)"/>
+                  <source srcset="./images/img1-mob.jpg 1x,
+                    ./images/img1-mob-2x.jpg 2x " media="(min-width: 320px)"/>
+                  <img
                     src="./images/img1-mob.jpg"
                     alt="молодий чоловік в окулярах"
                     class="worker__inmage"
-                    />  
-                  </picture>
-                
+                    />
+                </picture>
+
                 <div class="private">
                   <h3 class="private__name">Ігор Дем'яненко</h3>
                   <p class="private__job">Product Designer</p>
@@ -259,19 +274,19 @@
             <li class="grid-card">
               <article class="worker">
                 <picture>
-                  <source srcset="./images/im2.jpg, ./images/im2-2x.jpg "
+                  <source srcset="./images/im2.jpg 1x, ./images/im2-2x.jpg 2x "
                     media="(min-width: 1200px)"/>
-                  <source srcset="./images/img2-tab.jpg,
-                    ./images/img2-tab-2x.jpg " media="(min-width: 768px)"/>
-                  <source srcset="./images/img2-mob.jpg,
-                    ./images/img2-mob-2x.jpg " media="(min-width: 480px)"/>
-                    <img
-                  src="./images/img2-mob.jpg"
-                  alt="дівчина робітник фронт"
-                  class="worker__inmage"
-                  />
-                  </picture>
-            
+                  <source srcset="./images/img2-tab.jpg 1x,
+                    ./images/img2-tab-2x.jpg 2x " media="(min-width: 768px)"/>
+                  <source srcset="./images/img2-mob.jpg 1x,
+                    ./images/img2-mob-2x.jpg 2x " media="(min-width: 320px)"/>
+                  <img
+                    src="./images/img2-mob.jpg"
+                    alt="дівчина робітник фронт"
+                    class="worker__inmage"
+                    />
+                </picture>
+
                 <div class="private">
                   <h3 class="private__name">Ольга Рєпіна</h3>
                   <p class="private__job">Frontend Developer</p>
@@ -303,19 +318,19 @@
             <li class="grid-card">
               <article class="worker">
                 <picture>
-                  <source srcset="./images/im3.jpg, ./images/im3-2x.jpg "
+                  <source srcset="./images/im3.jpg 1x, ./images/im3-2x.jpg 2x"
                     media="(min-width: 1200px)"/>
-                  <source srcset="./images/img3-tab.jpg,
-                    ./images/img3-tab-2x.jpg " media="(min-width: 768px)"/>
-                  <source srcset="./images/img3-mob.jpg,
-                    ./images/img3-mob-2x.jpg " media="(min-width: 480px)"/>
-                    <img
+                  <source srcset="./images/img3-tab.jpg 1x,
+                    ./images/img3-tab-2x.jpg  2x" media="(min-width: 768px)"/>
+                  <source srcset="./images/img3-mob.jpg 1x,
+                    ./images/img3-mob-2x.jpg  2x" media="(min-width: 320px)"/>
+                  <img
                     src="./images/img3-mob.jpg"
                     alt="хлопець з маркентгу"
                     class="worker__inmage"
                     />
-                  </picture>
-        
+                </picture>
+
                 <div class="private">
                   <h3 class="private__name">Ольга Рєпіна</h3>
                   <p class="private__job">Frontend Developer</p>
@@ -347,19 +362,19 @@
             <li class="grid-card">
               <article class="worker">
                 <picture>
-                  <source srcset="./images/im4.jpg, ./images/im4-2x.jpg "
+                  <source srcset="./images/im4.jpg 1x, ./images/im4-2x.jpg 2x"
                     media="(min-width: 1200px)"/>
-                  <source srcset="./images/img4-tab.jpg,
-                    ./images/img4-tab-2x.jpg " media="(min-width: 768px)"/>
-                  <source srcset="./images/img4-mob.jpg,
-                    ./images/img4-mob-2x.jpg " media="(min-width: 480px)"/>
-                    <img
+                  <source srcset="./images/img4-tab.jpg 1x,
+                    ./images/img4-tab-2x.jpg 2x" media="(min-width: 768px)"/>
+                  <source srcset="./images/img4-mob.jpg 1x,
+                    ./images/img4-mob-2x.jpg 2x" media="(min-width: 320px)"/>
+                  <img
                     src="./images/img4-mob.jpg"
                     alt="хлопець з маркентгу"
                     class="worker__inmage"
                     />
-                  </picture>
-              
+                </picture>
+
                 <div class="private">
                   <h3 class="private__name">Михайло Єрмаков</h3>
                   <p class="private__job">UI Designer</p>
@@ -525,10 +540,11 @@
             <label class="checkbox-label">
               <input class="checkbox" type="checkbox" name="topic"
                 value=""/>
-              <span class="check-icon"></span><span class="text">Погоджуюся з розсилкою
-                та приймаю  <a class="modal-terms">Умови договору</a></span>  
+              <span class="check-icon"></span><span class="text">Погоджуюся з
+                розсилкою
+                та приймаю <a class="modal-terms">Умови договору</a></span>
             </label>
-        
+
           </div>
           <button class="modal-button__submit" type="submit">Відправити</button>
         </form>

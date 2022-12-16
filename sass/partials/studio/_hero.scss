@@ -18,18 +18,33 @@ h1 {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)), 
     url(../images/hero-m.jpg);
+    @include retina {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), 
+   url(../images/hero-m-2x.jpg);
       }
+    }
     @media (min-width: 481px) and (max-width: 768px) {
     padding-top: 118px;
     padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
   url(../images/here-t.png);
+  @include retina {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), 
+   url(../images/hero-t-2x.jpg);
+      }
     }
     @media (min-width: 769px) and (max-width: 1600px) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
     url(../images/hero-d.jpg);
+    @include retina {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)), 
+     url(../images/hero-2x.jpg);
+        }
   }
 }
   

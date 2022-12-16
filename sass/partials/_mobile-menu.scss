@@ -79,11 +79,9 @@
 
 .mobile-menu {
     padding: 0;
- 
     list-style: none;
-
+    margin: unset;
 }
-
 
 .mob-menu {
     text-align: left;
@@ -111,7 +109,6 @@
 }
 
 .mob-contacts {
-    margin-top: 50%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -141,9 +138,8 @@
     display: flex;
     margin-top: 15%;
     align-items: center;
-    &__item:not(:first-child){
-        margin-left: 10px;
-    }
+    flex-wrap: wrap;
+    gap: 10px;
     &__item:not(:last-child) {
         border-right: 1px solid rgba(33, 33, 33, 0.2);
         padding-right: 10px;
@@ -160,4 +156,8 @@
     text-decoration: none;
     font-style: normal;
     color: var(--active-color);
+}
+
+.all-cont{
+    margin-top: 60%;
 }
