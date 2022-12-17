@@ -182,6 +182,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    column-gap: 10px;
   }
 }
 .modal-terms {
@@ -192,7 +193,6 @@ textarea {
   text-decoration-skip: none;
   color: #2196F3;
   text-transform: none;
-  margin-left: 10px;
 
 }
 

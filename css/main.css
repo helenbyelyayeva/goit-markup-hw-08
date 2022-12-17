@@ -1430,6 +1430,9 @@ textarea:hover, textarea:focus {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
   }
 }
 .modal-terms {
@@ -1442,7 +1445,6 @@ textarea:hover, textarea:focus {
           text-decoration-skip: none;
   color: #2196F3;
   text-transform: none;
-  margin-left: 10px;
 }
 
 .checkbox-label {
