@@ -10,7 +10,6 @@
 @media (max-width: 767px) {
     .menu-desk {
         display: none;
-   
     }
 }
 
@@ -18,13 +17,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
     background-color: transparent;
     cursor: pointer;
     border: none;
     border-radius: 50%;
     outline: none;
-    padding: 22px;
+    width: 40px;
+    height: 40px;
 }
 
 @media (min-width: 768px) {
@@ -45,7 +44,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
+    padding: 48px 40px;
     background-color: #fff;
     z-index: 999;
     transform: translateX(100%);
@@ -67,8 +66,8 @@
 
 .menu-container .menu-toggle {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 10px;
+    right: 15px;
     color: var(--main-color);
 
     &:hover {
@@ -160,4 +159,15 @@
 
 .all-cont{
     margin-top: 60%;
+}
+.icon-menu{
+width: 24px;
+height: 16px;
+fill: currentColor;
+}
+
+.icon-cross{
+    width: 19px;
+    height: 19px;
+    fill: currentColor;
 }

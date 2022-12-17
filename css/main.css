@@ -83,6 +83,13 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 767px) {
+  .page-header__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 .page-header .page-header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -230,13 +237,13 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: auto;
   background-color: transparent;
   cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
-  padding: 22px;
+  width: 40px;
+  height: 40px;
 }
 
 @media (min-width: 768px) {
@@ -256,7 +263,7 @@ ul {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 48px 40px;
   background-color: #fff;
   z-index: 999;
   -webkit-transform: translateX(100%);
@@ -280,8 +287,8 @@ ul {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 10px;
+  right: 15px;
   color: var(--main-color);
 }
 .menu-container .menu-toggle:hover {
@@ -369,6 +376,18 @@ ul {
 
 .all-cont {
   margin-top: 60%;
+}
+
+.icon-menu {
+  width: 24px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.icon-cross {
+  width: 19px;
+  height: 19px;
+  fill: currentColor;
 }
 
 h1 {
@@ -835,18 +854,18 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 8px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .filter {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1022,7 +1041,7 @@ h1 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
   .left-footer {
     text-align: center;
   }
@@ -1061,7 +1080,7 @@ h1 {
   color: #ffffff;
   margin-bottom: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
   .middle-footer__heading {
     text-align: center;
   }
@@ -1077,7 +1096,7 @@ h1 {
   color: #ffffff;
   margin-bottom: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
   .right-footer__heading {
     text-align: center;
   }
