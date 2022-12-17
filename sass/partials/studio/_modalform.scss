@@ -176,9 +176,8 @@ textarea {
     margin: unset;
   }
 }
-
+.text{
 @media screen and (min-width: 480px){
-  .text{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
